@@ -106,7 +106,7 @@
   }
 
   // Demo form submission
-  var LEADENGINE_URL = 'https://leadengine-production.up.railway.app'; // TODO: update after Railway deploy
+  var LEADENGINE_URL = 'https://web-production-5bf4f.up.railway.app';
   var CLIENT_ID = '1';
 
   var form = document.getElementById('demo-form');
