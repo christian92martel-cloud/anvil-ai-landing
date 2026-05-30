@@ -16,6 +16,6 @@
 ## Key Details
 - Domain registrar: Namecheap (anvilresponder.com)
 - DNS: 4x A records pointing to GitHub Pages IPs + CNAME www -> github.io
-- Railway env vars: ANTHROPIC_API_KEY, TWILIO_*, SENDGRID_*, SECRET_KEY, DATABASE_PATH
+- Railway env vars: ANTHROPIC_API_KEY, TWILIO_*, SENDGRID_*, SECRET_KEY, DATABASE_URL (Postgres addon required)
 - Client ID for form submissions: 1
-- Database resets on Railway redeploy (no persistent volume) — auto-seeds on startup
+- Database persists via Railway Postgres addon — auto-seeds default client on startup if missing
