@@ -134,10 +134,19 @@ img {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 1.4rem;
   font-weight: 800;
   color: var(--white);
   letter-spacing: -0.5px;
+}
+
+.logo-icon {
+  width: 36px;
+  height: auto;
+  flex-shrink: 0;
 }
 
 .logo span {
