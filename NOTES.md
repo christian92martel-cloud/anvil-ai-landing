@@ -168,3 +168,34 @@ Would include everything in lower tiers PLUS:
 3. Do we need tier logic in the backend, or just on the landing page for now?
 4. Need to understand true costs better before finalizing (cost analysis above helps)
 5. Demo script and outreach templates need rewriting to match current product
+6. Confirm SendGrid plan — log in and check
+
+---
+
+## Session Notes — June 27, 2026
+
+### What We Did Today
+1. **Favicon** — Created favicon with black background + logo for browser tabs. Multiple size iterations, final version fills full height of icon.
+2. **Free month guarantee disclaimer** — Confirmed it's already on the landing page: "Guarantee excludes downtime caused by third-party service providers (SMS carriers, cloud hosting, etc.) and scheduled maintenance."
+3. **Tier 4 discussion** — User wants to build out a multi-tier pricing structure. Started with full competitive analysis + cost breakdown before setting prices.
+4. **Business cost analysis** — Identified all actual subscription costs:
+   - Claude Pro: $20/mo
+   - Anthropic API (Build): $25/mo
+   - Railway Pro: $20/mo + usage
+   - SendGrid: TBD (need to confirm)
+   - Twilio: Pay-as-you-go (no base)
+   - Total burn rate: ~$86/mo before any clients
+5. **Key insight:** Per-client variable cost is only ~$6/mo. Margins are 95-97% at scale. First client covers all overhead.
+
+### Where We Left Off
+- Need to finalize tier structure (how many tiers, what price, what features in each)
+- Need to confirm SendGrid plan
+- Tier 4 features (voice, missed-call text-back) are not yet built in backend
+- Demo script and outreach templates still outdated
+- Landing page still shows single $297/mo tier
+
+### Tomorrow's Priorities
+1. Confirm SendGrid plan
+2. Finalize tier pricing structure
+3. Implement tier 4 on landing page (and possibly tiers 1-3)
+4. Consider: build tier logic into backend or landing page only for now?
