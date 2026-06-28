@@ -105,6 +105,28 @@
     });
   }
 
+  // Scroll-triggered fade-in animations
+  var fadeEls = document.querySelectorAll('.fade-in');
+  if ('IntersectionObserver' in window) {
+    var fadeObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    fadeEls.forEach(function (el) {
+      fadeObserver.observe(el);
+    });
+  } else {
+    // Fallback: show everything immediately
+    fadeEls.forEach(function (el) {
+      el.classList.add('visible');
+    });
+  }
+
   // Demo form submission
   var LEADENGINE_URL = 'https://web-production-5bf4f.up.railway.app';
   var CLIENT_ID = '1';
