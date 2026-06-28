@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100" fill="none">
+  <defs>
+    <linearGradient id="top-face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#555"/>
+      <stop offset="100%" stop-color="#3a3a3a"/>
+    </linearGradient>
+    <linearGradient id="front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#333"/>
+      <stop offset="100%" stop-color="#1c1c1c"/>
+    </linearGradient>
+    <linearGradient id="shadow-side" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#222"/>
+      <stop offset="100%" stop-color="#111"/>
+    </linearGradient>
+  </defs>
+
+  <!-- === 3D ANVIL — based on real blacksmith anvil === -->
+
+  <!-- HORN — long taper curving slightly down -->
+  <path d="M2,44 Q10,38 18,36 L30,34 L30,46 L18,44 Q10,43 2,44Z" fill="#2a2a2a"/>
+  <!-- Horn top highlight -->
+  <path d="M2,44 Q10,38 18,36 L30,34 L30,37 L18,38 Q12,39 5,43Z" fill="#444"/>
+
+  <!-- FACE — flat top working surface -->
+  <!-- Top 3D plane -->
+  <path d="M30,28 Q32,26 34,25 L80,25 Q82,26 84,28 L30,28Z" fill="#555"/>
+  <!-- Front of face -->
+  <path d="M30,28 L84,28 L84,34 L30,34Z" fill="url(#top-face)"/>
+  <!-- Hardy hole (small square on face) -->
+  <rect x="40" y="26" width="3" height="2" fill="#222" rx="0.3"/>
+
+  <!-- BODY / WAIST — thick center section -->
+  <path d="M30,34 L84,34 L84,46 L30,46Z" fill="url(#front)"/>
+  <!-- Slight bevel highlight on body top edge -->
+  <path d="M30,34 L84,34 L84,37 L30,37Z" fill="#2e2e2e"/>
+
+  <!-- Right side depth (3D) -->
+  <path d="M84,28 Q87,26 90,28 L90,46 L84,46Z" fill="#151515"/>
+
+  <!-- WAIST TAPER — narrowing under body -->
+  <path d="M36,46 L78,46 Q74,52 70,56 L44,56 Q40,52 36,46Z" fill="#252525"/>
+  <!-- Waist shadow -->
+  <path d="M36,46 L78,46 Q76,48 74,50 L40,50 Q38,48 36,46Z" fill="#1a1a1a"/>
+
+  <!-- BASE FLARE — widens out to feet -->
+  <path d="M42,56 L72,56 Q80,60 90,64 L24,64 Q34,60 42,56Z" fill="#2a2a2a"/>
+  <!-- Base 3D top highlight -->
+  <path d="M42,56 L72,56 Q78,58 84,60 L30,60 Q36,58 42,56Z" fill="#3a3a3a"/>
+
+  <!-- BASE BLOCK -->
+  <path d="M20,64 L94,64 L94,70 L20,70Z" fill="#1c1c1c"/>
+  <!-- Base right side 3D -->
+  <path d="M94,64 L98,61 L98,67 L94,70Z" fill="#111"/>
+
+  <!-- FEET — curved arch between them (signature anvil look) -->
+  <path d="M20,70 L94,70 L94,76 Q88,76 82,76 L82,72 Q60,82 40,72 L40,76 Q32,76 20,76Z" fill="#1a1a1a"/>
+  <!-- Left foot -->
+  <path d="M20,70 L40,70 L40,80 Q36,84 30,84 L24,84 Q20,82 20,78Z" fill="#151515"/>
+  <!-- Right foot -->
+  <path d="M74,70 L94,70 L94,78 Q94,82 90,84 L84,84 Q78,84 74,80Z" fill="#151515"/>
+  <!-- Foot front faces -->
+  <path d="M20,70 L40,70 L40,72 L20,72Z" fill="#2a2a2a"/>
+  <path d="M74,70 L94,70 L94,72 L74,72Z" fill="#2a2a2a"/>
+  <!-- Arch between feet -->
+  <path d="M40,76 Q57,86 74,76 L74,72 Q57,82 40,72Z" fill="#0e0e0e"/>
+
+  <!-- === TOP-RIGHT DISSOLVE — blocks crumbling off face/body === -->
+
+  <!-- Dark blocks separating from anvil edge -->
+  <rect x="76" y="25" width="5" height="4.5" fill="#333" rx="0.4" transform="rotate(-2 78 27)"/>
+  <rect x="82" y="27" width="4.5" height="5" fill="#2a2a2a" rx="0.4" transform="rotate(1.5 84 30)"/>
+  <rect x="80" y="20" width="4.5" height="4" fill="#3a3a3a" rx="0.4" transform="rotate(-4 82 22)"/>
+  <rect x="87" y="24" width="4" height="4.5" fill="#252525" rx="0.4" transform="rotate(2 89 26)"/>
+  <rect x="86" y="32" width="4.5" height="4" fill="#1c1c1c" rx="0.4" transform="rotate(-1 88 34)"/>
+
+  <!-- Transition: dark to green -->
+  <rect x="74" y="14" width="5" height="4.5" fill="#1a3a28" rx="0.4" transform="rotate(-3 76 16)"/>
+  <rect x="84" y="16" width="4.5" height="4.5" fill="#1a4a2e" rx="0.4" transform="rotate(3 86 18)"/>
+  <rect x="91" y="21" width="4" height="4.5" fill="#1d5a38" rx="0.4" transform="rotate(-2 93 23)"/>
+  <rect x="80" y="9" width="4" height="4" fill="#1a4a2e" rx="0.4" transform="rotate(-5 82 11)"/>
+  <rect x="92" y="30" width="4" height="4" fill="#1d5a38" rx="0.4" transform="rotate(1 94 32)"/>
+
+  <!-- Green pixels — near -->
+  <rect x="88" y="12" width="5.5" height="5" fill="#10b981" rx="0.5" transform="rotate(-3 91 15)"/>
+  <rect x="96" y="20" width="5" height="5" fill="#10b981" rx="0.5" transform="rotate(2.5 98 22)"/>
+  <rect x="72" y="6" width="4.5" height="4.5" fill="#10b981" rx="0.5" transform="rotate(-2 74 8)"/>
+  <rect x="94" y="28" width="4.5" height="4.5" fill="#0d9668" rx="0.5" transform="rotate(3 96 30)"/>
+  <rect x="86" y="5" width="5" height="4.5" fill="#34d399" rx="0.5" transform="rotate(-6 88 7)"/>
+
+  <!-- Green pixels — mid distance -->
+  <rect x="100" y="13" width="5" height="4.5" fill="#10b981" rx="0.5" transform="rotate(4 102 15)"/>
+  <rect x="96" y="5" width="4.5" height="4.5" fill="#10b981" rx="0.5" transform="rotate(-3 98 7)"/>
+  <rect x="104" y="24" width="4" height="4" fill="#0d9668" rx="0.5" transform="rotate(2 106 26)"/>
+  <rect x="80" y="1" width="4" height="4" fill="#10b981" rx="0.5" transform="rotate(-4 82 3)"/>
+  <rect x="102" y="6" width="4" height="4.5" fill="#34d399" rx="0.5" transform="rotate(-5 104 8)"/>
+
+  <!-- Green pixels — far -->
+  <rect x="109" y="15" width="4" height="4" fill="#10b981" opacity="0.75" rx="0.5" transform="rotate(5 111 17)"/>
+  <rect x="93" y="0" width="4" height="3.5" fill="#34d399" opacity="0.7" rx="0.5" transform="rotate(-6 95 2)"/>
+  <rect x="110" y="8" width="3.5" height="3.5" fill="#10b981" opacity="0.6" rx="0.5" transform="rotate(-4 112 10)"/>
+  <rect x="112" y="22" width="3.5" height="3.5" fill="#0d9668" opacity="0.55" rx="0.5" transform="rotate(3 114 24)"/>
+
+  <!-- Green pixels — farthest -->
+  <rect x="116" y="12" width="3" height="3" fill="#10b981" opacity="0.45" rx="0.5" transform="rotate(-5 117 13)"/>
+  <rect x="105" y="0" width="3" height="3" fill="#10b981" opacity="0.4" rx="0.5" transform="rotate(4 106 1)"/>
+  <rect x="119" y="20" width="2.5" height="2.5" fill="#34d399" opacity="0.3" rx="0.5" transform="rotate(6 120 21)"/>
+  <rect x="122" y="8" width="2.5" height="2.5" fill="#10b981" opacity="0.25" rx="0.5" transform="rotate(-3 123 9)"/>
+  <rect x="114" y="1" width="2.5" height="2.5" fill="#34d399" opacity="0.25" rx="0.5" transform="rotate(5 115 2)"/>
+
+  <!-- Tiny particles -->
+  <rect x="126" y="5" width="2" height="2" fill="#10b981" opacity="0.15" rx="0.5"/>
+  <rect x="128" y="14" width="1.5" height="1.5" fill="#34d399" opacity="0.1" rx="0.5"/>
+  <rect x="124" y="0" width="1.5" height="1.5" fill="#10b981" opacity="0.08" rx="0.5"/>
+</svg>
