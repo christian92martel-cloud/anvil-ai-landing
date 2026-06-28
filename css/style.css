@@ -11,8 +11,8 @@
 
 :root {
   --dark: #1a1a2e;
-  --orange: #e85d26;
-  --orange-hover: #d04e1c;
+  --orange: #10b981;
+  --orange-hover: #0d9668;
   --blue: #2d6a9f;
   --off-white: #f5f5f0;
   --light-gray: #eaeaea;
@@ -82,8 +82,8 @@ img {
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, var(--orange-hover) 0%, #b8411a 100%);
-  box-shadow: 0 4px 16px rgba(232, 93, 38, 0.35);
+  background: linear-gradient(135deg, var(--orange-hover) 0%, #087a53 100%);
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.35);
 }
 
 .btn-lg {
@@ -136,7 +136,7 @@ img {
 .logo {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
   font-size: 1.4rem;
   font-weight: 800;
   color: var(--white);
@@ -144,9 +144,13 @@ img {
 }
 
 .logo-icon {
-  width: 36px;
-  height: auto;
+  width: 200px;
+  height: 64px;
+  object-fit: contain;
   flex-shrink: 0;
+  position: relative;
+  top: 4px;
+  margin-right: -8px;
 }
 
 .logo span {
@@ -256,7 +260,7 @@ img {
 }
 
 .hero .dashboard-mock {
-  box-shadow: 0 12px 48px rgba(232, 93, 38, 0.15), 0 8px 32px rgba(0,0,0,0.12);
+  box-shadow: 0 12px 48px rgba(16, 185, 129, 0.15), 0 8px 32px rgba(0,0,0,0.12);
 }
 
 /* Dashboard mockup shared styles */
@@ -520,7 +524,7 @@ img {
 }
 
 .feature-card:hover {
-  box-shadow: 0 8px 32px rgba(232, 93, 38, 0.15);
+  box-shadow: 0 8px 32px rgba(16, 185, 129, 0.15);
   transform: translateY(-4px);
   border-color: var(--orange);
 }
@@ -726,7 +730,7 @@ img {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--orange), #f5845a, var(--orange));
+  background: linear-gradient(90deg, var(--orange), #34d399, var(--orange));
 }
 
 .price-header {
@@ -899,7 +903,7 @@ img {
 
 .cta-form input:focus {
   border-color: var(--orange);
-  box-shadow: 0 0 0 3px rgba(232, 93, 38, 0.25);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
 }
 
 .cta-disclaimer {
