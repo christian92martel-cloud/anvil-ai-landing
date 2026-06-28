@@ -34,6 +34,23 @@
 
 ## Business Cost Breakdown (June 2026)
 
+### YOUR ACTUAL Monthly Subscriptions (bills you're paying now)
+
+| Service | Plan | Monthly Cost |
+|---------|------|--------------|
+| Claude Pro (Claude Code CLI) | Pro | $20.00 |
+| Anthropic API (Claude Haiku for AI responses) | Build | $25.00 |
+| Railway (backend hosting) | Pro | $20.00 + usage |
+| SendGrid (email) | TBD — need to confirm plan | $19.95 (Essentials) or TBD |
+| Twilio (SMS) | Pay-as-you-go | $0 base + per-msg usage |
+| Namecheap (domain) | .com renewal | ~$1.22 (annualized) |
+| GitHub | Free | $0 |
+| Backblaze B2 (backups) | Pay-as-you-go | ~$0.01 |
+| **Total subscriptions (before any clients)** | | **~$86-87/mo** |
+
+**Note:** You're spending ~$86/mo before you have a single client. This is your burn rate.
+- Annualized: ~$1,032/year in fixed overhead
+
 ### Per-Client Variable Costs (~200 leads/month estimate)
 
 | Line Item | Unit Cost | Qty/Month | Monthly Cost |
@@ -45,25 +62,24 @@
 | SendGrid email (marginal) | ~$0.0004/email | 200 | $0.08 |
 | **Per-client variable total** | | | **~$6.04/mo** |
 
-### Fixed Infrastructure Costs (shared across all clients)
+### True Per-Client Cost at Scale (including subscriptions)
 
-| Item | Monthly Cost |
-|------|--------------|
-| Railway hosting (Flask + Postgres) | ~$10-15 |
-| SendGrid Essentials (50K plan) | $19.95 |
-| Namecheap domain (annualized) | ~$1.22 |
-| A2P 10DLC registration (amortized) | ~$2-5 |
-| Backblaze B2 backups | ~$0.01 (negligible) |
-| **Total fixed** | **~$33-41/mo** |
+| Clients | Subs/Client | Variable/Client | Total/Client | Margin at $297/mo | Annual Revenue |
+|---------|-------------|-----------------|--------------|-------------------|----------------|
+| 1 | $86.00 | $6.04 | ~$92.04 | $204.96 (69.0%) | $3,564 |
+| 5 | $17.20 | $6.04 | ~$23.24 | $273.76 (92.2%) | $17,820 |
+| 10 | $8.60 | $6.04 | ~$14.64 | $282.36 (95.1%) | $35,640 |
+| 25 | $3.44 | $6.04 | ~$9.48 | $287.52 (96.8%) | $89,100 |
+| 50 | $1.72 | $6.04 | ~$7.76 | $289.24 (97.4%) | $178,200 |
+| 84 | $1.02 | $6.04 | ~$7.06 | $289.94 (97.6%) | $299,376 |
 
-### Per-Client Cost at Scale
+### Breakeven Analysis
 
-| Clients | Fixed/Client | Variable/Client | Total/Client | Margin at $297/mo |
-|---------|--------------|-----------------|--------------|-------------------|
-| 10 | $3.50 | $6.04 | ~$9.54 | $287.46 (96.8%) |
-| 25 | $1.50 | $6.04 | ~$7.54 | $289.46 (97.5%) |
-| 50 | $0.75 | $6.04 | ~$6.79 | $290.21 (97.7%) |
-| 84 | $0.45 | $6.04 | ~$6.49 | $290.51 (97.8%) |
+| Scenario | Breakeven Point |
+|----------|----------------|
+| Cover subscriptions only ($86/mo) | 1 client at $297 covers it |
+| $300K/year target | 84 clients at $297/mo |
+| $300K/year (mixed tiers) | ~60-82 clients depending on tier mix |
 
 ### API Unit Pricing Reference
 
@@ -71,7 +87,7 @@
 - **Twilio phone number:** $1.15/mo (local), $2.15/mo (toll-free)
 - **SendGrid Essentials 50K:** $19.95/mo base
 - **Claude Haiku 4.5:** $1.00/M input tokens, $5.00/M output tokens
-- **Railway Hobby:** $5/mo + usage (~$10-15 total for small app + Postgres)
+- **Railway Pro:** $20/mo per seat + usage (Flask + Postgres ~$10-15 usage)
 - **Backblaze B2:** $0.006/GB/mo storage, free upload, $0.01/GB download
 - **Namecheap .com renewal:** ~$14.18-$14.98/year
 
