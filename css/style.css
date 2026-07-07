@@ -979,6 +979,7 @@ img {
 .features-grid .fade-in:nth-child(6) { transition-delay: 0.1s; }
 .features-grid .fade-in:nth-child(7) { transition-delay: 0.2s; }
 .features-grid .fade-in:nth-child(8) { transition-delay: 0.3s; }
+.features-grid .fade-in:nth-child(9) { transition-delay: 0.15s; }
 
 /* --- Float Animation --- */
 @keyframes float {
