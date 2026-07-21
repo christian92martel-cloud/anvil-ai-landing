@@ -960,6 +960,17 @@ img {
   color: #666;
 }
 
+.veteran-badge {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: #999;
+  letter-spacing: 0.02em;
+}
+
+.veteran-flag {
+  margin-right: 4px;
+}
+
 /* --- Fade-in Animations --- */
 .fade-in {
   opacity: 0;
