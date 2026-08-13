@@ -11,8 +11,8 @@
 
 :root {
   --dark: #1a1a2e;
-  --orange: #10b981;
-  --orange-hover: #0d9668;
+  --green: #10b981;
+  --green-hover: #0d9668;
   --blue: #2d6a9f;
   --off-white: #f5f5f0;
   --light-gray: #eaeaea;
@@ -75,14 +75,14 @@ img {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--orange) 0%, var(--orange-hover) 100%);
+  background: linear-gradient(135deg, var(--green) 0%, var(--green-hover) 100%);
   color: var(--white);
   padding: 14px 32px;
   font-size: 1rem;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, var(--orange-hover) 0%, #087a53 100%);
+  background: linear-gradient(135deg, var(--green-hover) 0%, #087a53 100%);
   box-shadow: 0 4px 16px rgba(16, 185, 129, 0.35);
 }
 
@@ -96,14 +96,14 @@ img {
 }
 
 .btn-nav {
-  background: var(--orange);
+  background: var(--green);
   color: var(--white);
   padding: 10px 24px;
   font-size: 0.9rem;
 }
 
 .btn-nav:hover {
-  background: var(--orange-hover);
+  background: var(--green-hover);
 }
 
 .btn.submitted {
@@ -154,7 +154,7 @@ img {
 }
 
 .logo span {
-  color: var(--orange);
+  color: var(--green);
 }
 
 .nav-links {
@@ -196,7 +196,7 @@ img {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--orange);
+  background: var(--green);
   transition: width 0.3s ease;
 }
 
@@ -414,14 +414,14 @@ img {
 .stat-number {
   font-size: 3rem;
   font-weight: 800;
-  color: var(--orange);
+  color: var(--green);
   line-height: 1;
 }
 
 .stat-suffix {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--orange);
+  color: var(--green);
 }
 
 .stat-desc {
@@ -463,7 +463,7 @@ img {
 .step-num {
   width: 48px;
   height: 48px;
-  background: var(--orange);
+  background: var(--green);
   color: var(--white);
   border-radius: 50%;
   display: flex;
@@ -526,7 +526,7 @@ img {
 .feature-card:hover {
   box-shadow: 0 8px 32px rgba(16, 185, 129, 0.15);
   transform: translateY(-4px);
-  border-color: var(--orange);
+  border-color: var(--green);
 }
 
 .feature-icon {
@@ -535,7 +535,7 @@ img {
   height: 40px;
   display: flex;
   align-items: center;
-  color: var(--orange);
+  color: var(--green);
 }
 
 .feature-icon svg {
@@ -543,7 +543,7 @@ img {
   height: 32px;
   min-width: 32px;
   min-height: 32px;
-  stroke: var(--orange);
+  stroke: var(--green);
   fill: none;
   stroke-width: 2;
   stroke-linecap: round;
@@ -730,7 +730,7 @@ img {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--orange), #34d399, var(--orange));
+  background: linear-gradient(90deg, var(--green), #34d399, var(--green));
 }
 
 .price-header {
@@ -773,7 +773,7 @@ img {
   content: '\2713';
   position: absolute;
   left: 0;
-  color: var(--orange);
+  color: var(--green);
   font-weight: 700;
 }
 
@@ -832,7 +832,7 @@ img {
 
 .faq-icon {
   font-size: 1.4rem;
-  color: var(--orange);
+  color: var(--green);
   transition: transform 0.2s;
   flex-shrink: 0;
 }
@@ -902,7 +902,7 @@ img {
 }
 
 .cta-form input:focus {
-  border-color: var(--orange);
+  border-color: var(--green);
   box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
 }
 
@@ -949,7 +949,7 @@ img {
 }
 
 .footer-contact a {
-  color: var(--orange);
+  color: var(--green);
   font-size: 0.9rem;
 }
 
@@ -1189,7 +1189,7 @@ img {
     display: flex;
     align-items: center;
     font-size: 1.5rem;
-    color: var(--orange);
+    color: var(--green);
     font-weight: 700;
   }
 
