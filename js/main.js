@@ -130,6 +130,13 @@
   // Demo form submission
   var LEADENGINE_URL = 'https://app.anvilresponder.com';
   var CLIENT_ID = '1';
+  // TODO (2026-08-26, still needs a real value): copy the real webhook key
+  // from the logged-in dashboard's Settings -> Integrations card and paste
+  // it here. This form has been silently 401ing on every real submission
+  // since webhook auth was added — see LAND-01 in security-audit-2026-08-25.md.
+  // This key is meant to be public/embeddable (same one every client copies
+  // into their own site's widget snippet) — safe to hardcode here once set.
+  var API_KEY = 'PASTE_CLIENT_1_WEBHOOK_API_KEY_HERE';
 
   var form = document.getElementById('demo-form');
   form.addEventListener('submit', function (e) {
@@ -141,6 +148,7 @@
 
     var formData = {
       client_id: CLIENT_ID,
+      api_key: API_KEY,
       name: form.querySelector('[name="name"]').value,
       email: form.querySelector('[name="email"]').value,
       phone: form.querySelector('[name="phone"]').value,
@@ -149,7 +157,7 @@
 
     fetch(LEADENGINE_URL + '/webhook/form', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', 'X-API-Key': API_KEY },
       body: JSON.stringify(formData)
     })
       .then(function (res) {

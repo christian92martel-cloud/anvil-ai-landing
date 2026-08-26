@@ -365,6 +365,11 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <script src="https://app.anvilresponder.com/widget.js" data-client-id="1"></script>
+  <!-- TODO (2026-08-26, still needs a real value): same webhook key as
+       main.js's API_KEY placeholder — copy it from Settings -> Integrations
+       and set data-api-key below. Chat widget has been silently failing on
+       every message since webhook auth was added. See LAND-01 in
+       security-audit-2026-08-25.md. -->
+  <script src="https://app.anvilresponder.com/widget.js" data-client-id="1" data-api-key="PASTE_CLIENT_1_WEBHOOK_API_KEY_HERE"></script>
 </body>
 </html>
